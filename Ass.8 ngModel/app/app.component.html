@@ -1,0 +1,17 @@
+<h1>Inside App</h1>
+<input [(ngModel)]="msgfrompaent" type="text" >
+<button (click)="onSend()" >Send To child</button>
+<h1>Message from child -> {{cmsg}}</h1>
+<app-demo [pmsg]="msgfrompaent1" (send)="cmsg=$event"> </app-demo>
+
+
+
+<br><b><br><br></b>
+<!-- <h1>Using ngModel</h1> -->
+<h1>Length Of String</h1>
+<input [(ngModel)]="str" type="text" id="hh" >
+<h1>{{str.length}}</h1>
+
+<!-- <br><br><h1>Without Using ngModel</h1>
+<input #strlen type="text" oninput="onChange(strlen.value)">
+<h1>{{len.length}}</h1> -->
